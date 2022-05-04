@@ -1,13 +1,17 @@
 const mail = prompt("Inserisci mail")
 const list = ["boolean@mail.com", "mimmo@mail.com", "pinco@mail.com", "palla@mail.com"]
+let found = false;
 
 for (let i = 0; i < list.length; i++) {
     if (mail === list[i]) {
-        alert("login effettuato!");
-    } else {
-        alert("mail non registrata!")
+        found = true;
     }
-    break
+}
+
+if (found) {
+    alert("login effettuato!");
+} else {
+    alert("mail non registrata!");
 }
 
 
